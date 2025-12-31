@@ -1,5 +1,7 @@
 import random
 
+#A
+
 def play_random(n):
     # using 0-99 instead of ranges 1-100
     pardoned = 0
@@ -20,3 +22,12 @@ def play_random(n):
         if found:
             pardoned += 1
     return pardoned / n * 100   # %
+
+#B
+
+#C
+if __name__ == '__main__':
+    n = 100_000
+    print(" Simulation count:", n)
+    print(f" Random play wins: {play_random(n):4.1f}% of simulations")
+    print(f"Optimal play wins: {play_optimal(n):4.1f}% of simulations")
